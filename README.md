@@ -1,2 +1,2 @@
 #  ecommerce-interface-lab
-# BIDO, ZANJOE & LOVINO, CARL
+# BIDO, ZANJOE & LOVINO, CARL JOSEPH
