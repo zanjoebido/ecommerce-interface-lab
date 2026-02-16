@@ -1,2 +1,2 @@
-# E-Commerce-Interface-Structures
+#  ecommerce-interface-lab
 # BIDO, ZANJOE & LOVINO, CARL
