@@ -41,6 +41,7 @@ button{
     background-color: var(--button-color);
     color: white;
     transition: 0.3s ease-in-out;
+    border-radius: 10px;
 }
 
 button:hover{
@@ -51,6 +52,15 @@ button:hover{
 button:active{
     background-color: aliceblue;
     color: black;
+}
+
+ul{
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.spc{
+    margin-left: 25px;
 }
 
 /* Product List Styling */
