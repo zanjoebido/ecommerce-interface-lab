@@ -4,32 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRODUCT DETAIL VIEW</title>
+    <link href="style.css" rel="Stylesheet">
 </head>
 
 <body>
-  <h2>Technical Specifications</h2>
-    <table>
+  <h2>Product Details</h2>
+    <table class="spec-table">
       <tr>
-        <th>Material -</th>
+        <th>Material</th>
         <td>Organic Cotton</td>
       </tr>
       <tr>
-        <th>Weight -</th>
+        <th>Weight</th>
         <td>0.5 lbs</td>
       </tr>
     </table>
 
+    <br>
   <form>
     <label>Quantity:</label>
     <input type="number" min="1" value="0">
-    <button type="submit">Add to Cart</button>
+    <a href="cart.html"><button type="submit">Add to Cart</button></a>
   </form>
 
   <section>
     <h2>Customer Reviews</h2>
     <blockquote>
+      ⭐⭐⭐⭐
       <h3>Great Quality!</h3>
       <p>This exceeded my expectations.</p>
+      ⭐⭐⭐
+      <h3>No complaints, but not my favorite!</h3>
+      <p>Let's just say, it's fine.</p>
     </blockquote>
   </section>
 </body>

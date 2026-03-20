@@ -1,0 +1,147 @@
+/* The Visual Foundation */
+:root{
+    --primary-color: white;
+    --accent-color: maroon;
+    --text-color: navy;
+    --button-color:black;
+}
+
+body{
+    background-color: bisque;
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: var(--text-color);
+    font: sans-serif;
+}
+
+/* Interactive States & Transitions */
+
+a {
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+a:hover{
+    font-size: 15px;
+}
+
+input{
+    transition: 0.3s;
+}
+input:focus{
+    color: blue;
+    font-size: 14px;
+}
+
+button{
+    width: 7rem;
+    height: 2remx;
+    background-color: var(--button-color);
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color: var(--text-color);
+    color: var(--primary-color);
+}
+
+button:active{
+    background-color: aliceblue;
+    color: black;
+}
+
+/* Product List Styling */
+
+main{
+    display: inline-flex;
+}
+
+article{
+    width: 200px;
+    height:250px;
+    border:black 2px solid;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.img{
+    width: 200px;
+    height: 150px;
+}
+
+article:nth-child(odd){
+    background-color: var(--accent-color);
+    color: white;
+}
+
+/* Advanced Selectors & Pseudo-elements */
+
+.cart-container:empty {
+  height: 200px;
+  background-color: #f9f9f9;
+  border: 2px dashed #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-container:empty::after {
+  content: "Your cart is currently empty.";
+  color: #888;
+}
+
+.price::before{
+  content: "₱"; 
+  font-weight: bold;
+  margin-right: 2px;
+}
+
+input:required {
+  border-left: 5px solid #ff4d4d; 
+}
+
+input:focus:valid {
+  border-color: #2ecc71; 
+  background-color: #f0fff4;
+}
+
+/* Detailed Data Styling */
+
+table{
+    border: #2c3e50;
+}
+
+table.spec-table tr td:first-child {
+  font-weight: bold;
+  color: #2c3e50;
+  background-color: #f8f9fa;
+  width: 30%; 
+  padding-left: 15px;
+}
+
+table.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table.spec-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+table.spec-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table.spec-table tr:first-child {
+  background-color: #ccc;
+}
+
+.order-list li::marker{
+    color: black;
+
+}

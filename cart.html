@@ -4,28 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THE SHOPPING CART</title>
+   <link href="style.css" rel="Stylesheet">
 </head>
 
 <body>
   
-  <h1>Your Shopping Cart</h1>
-  <ul>
-    <li>
-      <img src="headphone.jpg" alt="Headphones">
-      <h3>Premium Headphones</h3>
-      <p>$199.00</p>
-      Quantity <input type="number" value="1"> 
-    </li>
-  </ul>
+  <h1>Shopping Cart</h1>
 
+  
   <ul>
+    <article class="cart-container">
     <li>
-      <img src="Baby-Oil.jpg" alt="Baby-Oil">
+      <img src="headphones.png" alt="Headphones" class="img">
+      <h3>Premium Headphones</h3>
+      <p class="price">199.00</p> 
+    </li>
+    </article>
+  
+    <article class="cart-container">
+    <li>
+      <img src="baby-oil.png" alt="Baby-Oil" class="img">
       <h3>Baby Oil</h3>
-      <p>$70.99</p>
-      Quantity <input type="number" value="1"> 
+      <p class="price">70.99</p> 
+    </li>
+    </article>
+
+    <article class="cart-container">
+    <li>
+      <img src="jacket.png" alt="Black Hoodie" class="img">
+      <h3>Black Hoodie</h3>
+      <p class="price">100.50</p>
+    </li>
+    </article>
+
+    <article class="cart-container">
+    <li>
+      <img src="watermelon.png" alt="Watermelon" class="img">
+      <h3>Watermelon</h3>
+      <p class="price">15.99</p>
+    </li>
+    </article>
+
+    <article class="cart-container">
+    <li>
+      <img src="basketball.png" alt="Basketball" class="img">
+      <h3>Basketball</h3>
+      <p class="price">229</p>
     </li>
   </ul>
+  </article>
+
+
+  Quantity <input type="number" value="1"> 
 
   <div>
     <p>Subtotal: <strong>$269.99</strong></p>
@@ -33,7 +63,7 @@
 
   <a href="checkout.html"><button>Proceed to Checkout</button></a>
 
-  <p hidden>Your cart is currently empty.</p>
+  
 
 </body>
 </html>

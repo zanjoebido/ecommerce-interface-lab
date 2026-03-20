@@ -4,32 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRODUCT LISTING VIEW</title>
+    <link href="style.css" rel="Stylesheet">
 </head>
 
 <body>
+  <h1>EXPLORE PRODUCTS</h1>
 
 <main>
-  <section>
     <article>
-      <img src="hat.jpg" alt="hat">
-      <p>$29.99</p>
-      <a href="detail.html">View Details</a>
+      <img src="basketball.png" alt="Basketball" class="img">
+      <p>$229</p>
+      <a href="detail.html"><button>View Details</button></a>
     </article>
+
+    <article>
+      <img src="watermelon.png" alt="Watermelon" class="img">
+      <p>$15.99</p>
+      <a href="detail.html"><button>View Details</button></a>
+    </article>
+
+    <article>
+      <img src="jacket.png" alt="Black Hoodie" class="img">
+      <p>$100.50</p>
+      <a href="detail.html"><button>View Details</button></a>
+    </article>
+</main>
 
   <aside>
     <h3>Filters</h3>
     <form>
-        <h4>Category</h4>
+        <h4>Category of Products</h4>
   
-        <label><input type="checkbox" value="Home & Garden"> Home & Garden</label>
+        <label><input type="checkbox" value="Home & Garden">Garden</label>
         <label><input type="checkbox" value="Fashion"> Fashion</label>
+        <label><input type="checkbox" value="Sports"> Sports</label>
+        <label><input type="checkbox" value="Food">Food</label>
+        <label><input type="checkbox" value="Tools">Tools</label>
+        <label><input type="checkbox" value="Appliances">Appliances</label>
   
         <h4>Price Range</h4>
-        <label><input type="radio" name="price" value="low"> Under $50</label>
-        <label><input type="radio" name="price" value="high"> Over $50</label>
+        <label><input type="radio" name="price" value="low">$25</label>
+        <label><input type="radio" name="price" value="low">$50</label>
+        <label><input type="radio" name="price" value="high">$75</label>
+        <label><input type="radio" name="price" value="high">$100</label>
       </form>
-  </aside>
 
-</main>
+      <section>
+        <a href="cart.html"><button>View Cart</button></a>
+      </section>
+
+  </aside>
 </body>
 </html>
