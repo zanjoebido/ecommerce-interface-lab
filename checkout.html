@@ -3,36 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHECKOUT & SHIPPING</title>
-    <link href="style.css" rel="Stylesheet">
+    <title>Checkout & Shipping</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <section>
-    <fieldset>
-    <label>Shipping Address</label><br>
-      <input type="text" placeholder="Full Name" required>
-      <input type="text" placeholder="Street Address" required>
-      <input type="text" placeholder="Zip Code" required>
-    </fieldset>
-  </section>
+    <main>
+        <form action="#" method="POST">
+            <section>
+                <fieldset>
+                    <legend>Shipping Address</legend>
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" placeholder="Your name" required><br>
+                    
+                    <label for="address">Street Address</label>
+                    <input type="text" id="address" placeholder="Full address" required><br>
+                    
+                    <label for="zip">Zip Code</label>
+                    <input type="text" id="zip" placeholder="Zip Code" required>
+                </fieldset>
+            </section>
 
-  <form>
-    <fieldset>
-    <label>Payment Details</label><br>
-      <input type="radio" name="payment" value="cc">Credit Card
-      <input type="radio" name="payment" value="Paypal">Paypal
-    </fieldset>
-  </form>
+            <section>
+                <fieldset>
+                    <legend>Payment Details</legend>
+                    <label><input type="radio" name="payment" value="cc" checked> Credit Card</label>
+                    <label><input type="radio" name="payment" value="Paypal"> PayPal</label>
+                    <label><input type="radio" name="payment" value="cod"> Cash on Delivery</label>
+                    <label><input type="radio" name="payment" value="GCash"> GCash</label>
+                </fieldset>
+            </section>
 
-  <aside>
-    <h2>Summary</h2>
-    <p>Items: ₱269.99</p>
-    <p>Shipping: ₱100.00</p>
-    <hr>
-    <p><strong>Total: ₱369.99</strong></p>
-     <button type="submit">Place Order</button>
-  </aside>
-
+            <aside class="checkout-summary">
+                <h2>Summary</h2>
+                <p>Items: <b class="price">269.99</b></p>
+                <p>Shipping:<b class="price">100.00</b></p>
+                <hr>
+                <p><strong>Total: <b class="price">369.99</b></strong></p>
+                <button type="submit">Place Order</button>
+            </aside>
+        </form>
+    </main>
 </body>
 </html>

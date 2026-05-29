@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIGNUP PAGE</title>
-    <link href="style.css" rel="Stylesheet">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1>Create an Account</h1>
-    <form>
-      <input type="email" placeholder="Enter your Email" required>
-      <input type="password" placeholder="Enter your Password" required>
-    </form>
-    <a href="landing.html"><button>Login</button></a>
+    <main>
+        <section class="signup-container">
+            <h2>Create Your Account</h2>
+            <form action="account.html" method="POST">
+                <fieldset>
+                    <legend>Registration Form</legend>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="you@example.com"><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required minlength="8"><br>
+
+                    <button type="submit">Sign Up</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
 </body>
 </html>

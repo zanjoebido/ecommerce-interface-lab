@@ -3,56 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRODUCT LISTING VIEW</title>
-    <link href="style.css" rel="Stylesheet">
+    <title>Browse Products</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <h1>EXPLORE PRODUCTS</h1>
+    <header>
+        <h1>Product Catalog</h1>
+    </header>
 
-<main>
-    <article>
-      <img src="basketball.png" alt="Basketball" class="img">
-      <p class="price">229</p>
-      <a href="detail.html"><button>View Details</button></a>
-    </article>
+    <div class="container" style="display: flex;">
+        <aside>
+            <h2>Sort</h2>
+            <form>
+                <fieldset>
+                    <legend>Category</legend>
+                    <label><input type="checkbox" name="category" value="tech"> Electronics</label><br>
+                    <label><input type="checkbox" name="category" value="apparel"> Apparel</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Prices</legend>
+                    <label><input type="radio" name="price" value="under-50"> Under ₱500</label><br>
+                    <label><input type="radio" name="price" value="over-50"> ₱500 & Above</label>
+                </fieldset>
+            </form>
+        </aside>
 
-    <article>
-      <img src="watermelon.png" alt="Watermelon" class="img">
-      <p class="price">15.99</p>
-      <a href="detail.html"><button>View Details</button></a>
-    </article>
+        <main>
+            <section class="product-grid">
+                <article class="product-card">
+                    <img src="headphones.png" alt="Premium Headphones">
+                    <h3>Premium Headphones</h3>
+                    <p class="price">199.00</p>
+                    <a href="detail.html">View Details</a>
+                </article>
 
-    <article>
-      <img src="jacket.png" alt="Black Hoodie" class="img">
-      <p class="price">100.50</p>
-      <a href="detail.html"><button>View Details</button></a>
-    </article>
-</main>
+                <article class="product-card">
+                    <img src="jacket.png" alt="Black Hoodie">
+                    <h3>Black Hoodie</h3>
+                    <p class="price">100.50</p>
+                    <a href="detail.html">View Details</a>
+                </article>
 
-  <aside>
-    <h3>Filters</h3>
-    <form>
-        <h4>Category of Products</h4>
-  
-        <label><input type="checkbox" value="Home & Garden">Garden</label>
-        <label><input type="checkbox" value="Fashion"> Fashion</label>
-        <label><input type="checkbox" value="Sports"> Sports</label>
-        <label><input type="checkbox" value="Food">Food</label>
-        <label><input type="checkbox" value="Tools">Tools</label>
-        <label><input type="checkbox" value="Appliances">Appliances</label>
-  
-        <h4>Price Range</h4>
-        <label><input type="radio" name="price" value="low">₱25</label>
-        <label><input type="radio" name="price" value="low">₱50</label>
-        <label><input type="radio" name="price" value="high">₱75</label>
-        <label><input type="radio" name="price" value="high">₱100</label>
-      </form>
+                <article class="product-card">
+                    <img src="baby-oil.png" alt="baby-oil">
+                    <h3>Baby Oil</h3>
+                    <p class="price">137.99</p>
+                    <a href="detail.html">View Details</a>
+                </article>
 
-      <section>
-        <a href="cart.html"><button>View Cart</button></a>
-      </section>
+                <article class="product-card">
+                    <img src="basketball.png" alt="basketball">
+                    <h3>Basketball</h3>
+                    <p class="price">1,075.00</p>
+                    <a href="detail.html">View Details</a>
+                </article>
 
-  </aside>
+                <article class="product-card">
+                    <img src="dress.png" alt="dress">
+                    <h3>Dress</h3>
+                    <p class="price">240.00</p>
+                    <a href="detail.html">View Details</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="pot.png" alt="pot">
+                    <h3>Clay Pot</h3>
+                    <p class="price">300.50</p>
+                    <a href="detail.html">View Details</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="dumbell.png" alt="dumbell">
+                    <h3>Dumbell</h3>
+                    <p class="price">999.00</p>
+                    <a href="detail.html">View Details</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="watch.png" alt="watch">
+                    <h3>Watch</h3>
+                    <p class="price">589.00</p>
+                    <a href="detail.html">View Details</a>
+                </article>
+            </section>
+        </main>
+    </div>
 </body>
 </html>

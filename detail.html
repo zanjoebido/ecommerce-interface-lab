@@ -8,35 +8,48 @@
 </head>
 
 <body>
-  <h2>Product Details</h2>
+  <main>
+    <h1>Product Details</h1>
+    <div class="table-responsive">
     <table class="spec-table">
-      <tr>
-        <th>Material</th>
-        <td>Organic Cotton</td>
-      </tr>
-      <tr>
-        <th>Weight</th>
+      <thead>
+        <tr>
+          <th scope="col">Specification</th>
+          <th scope="col">Detail</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Material</th>
+          <td>Organic Cotton</td>
+        </tr>
+
+        <tr scope="row">Weight</tr>
         <td>0.5 lbs</td>
-      </tr>
-    </table>
+      </tbody>
+    </table> 
+    </div>
 
     <br>
-  <form>
-    <label>Quantity:</label>
-    <input type="number" min="1" value="0">
-    <a href="cart.html"><button type="submit">Add to Cart</button></a>
+  <form action="cart.html" method="get">
+    <button type="submit">Add to Cart</button>
   </form>
 
-  <section>
+  <br>
+  <section class="reviews">
     <h2>Customer Reviews</h2>
-    <blockquote>
-      ⭐⭐⭐⭐
-      <h3>Great Quality!</h3>
-      <p>This exceeded my expectations.</p>
-      ⭐⭐⭐
-      <h3>No complaints, but not my favorite!</h3>
-      <p>Let's just say, it's fine.</p>
-    </blockquote>
+      <article class="review">
+        <span>⭐⭐⭐⭐</span>
+        <h3>Great Quality!</h3>
+        <blockquote>This Execeeded my expectations.</blockquote>
+      </article>
+
+      <article class="review">
+        <span>⭐⭐⭐</span>
+        <h3>Not that great, but not that bad!</h3>
+        <blockquote>Recommended for those in budget.</blockquote>
+      </article>  
   </section>
+  </main>
 </body>
 </html>

@@ -8,62 +8,41 @@
 </head>
 
 <body>
-  
-  <h1>Shopping Cart</h1>
+  <main>
+
+   <h1>Shopping Cart</h1>
 
   
-  <ul>
-    <article class="cart-container">
-    <li>
-      <img src="headphones.png" alt="Headphones" class="img">
-      <h3>Premium Headphones</h3>
-      <p class="price">199.00</p> 
-    </li>
-    </article>
-  
-    <article class="cart-container">
-    <li>
-      <img src="baby-oil.png" alt="Baby-Oil" class="img">
-      <h3>Baby Oil</h3>
-      <p class="price">70.99</p> 
-    </li>
-    </article>
+    <ul class="cart-container">   
+      <li>
+        <article class="cart-item">
+          <img src="headphones.png" alt="Headphones" class="img">
+          <h3>Premium Headphones</h3>
+          <p class="price">199.00</p>
+          <label><input type="number" min="1" value="1"></label>
+        </article> 
+      </li>
 
-    <article class="cart-container">
-    <li>
-      <img src="jacket.png" alt="Black Hoodie" class="img">
-      <h3>Black Hoodie</h3>
-      <p class="price">100.50</p>
-    </li>
-    </article>
+      <li>
+        <article class="cart-item">
+          <img src="baby-oil.png" alt="baby-oil" class="img">
+          <h3>Johnson's Babyoil</h3>
+          <p class="price">70.99</p>
+          <label><input type="number" min="1" value="1"></label>
+        </article> 
+      </li>
+    </ul>
 
-    <article class="cart-container">
-    <li>
-      <img src="watermelon.png" alt="Watermelon" class="img">
-      <h3>Watermelon</h3>
-      <p class="price">15.99</p>
-    </li>
-    </article>
+    <div class="cart-summary">
+      <p>Subtotal: <strong class="price">269.99</strong></p>
+    </div>
+    
+    <a href="checkout.html" class="btn-checkout">Proceed to Checkout</a>
 
-    <article class="cart-container">
-    <li>
-      <img src="basketball.png" alt="Basketball" class="img">
-      <h3>Basketball</h3>
-      <p class="price">229</p>
-    </li>
-  </ul>
-  </article>
-
-<br>
-  Quantity <input type="number" value="1"> 
-
-  <div>
-    <p>Subtotal: <strong class="price">269.99</strong></p>
-  </div>
-
-  <a href="checkout.html"><button>Proceed to Checkout</button></a>
-
-  
-
+    <section class="empty-cart-message" style="display:none;">
+      <p>Your Cart is Currently Empty.</p>
+      <a href="products.html">Continue Shopping</a>
+    </section>
+  </main>
 </body>
 </html>
