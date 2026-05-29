@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout & Shipping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form action="#" method="POST" class="checkout-form">
+            <section>
+                <fieldset>
+                    <legend>Shipping Address</legend>
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" placeholder="Your name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Street Address</label>
+                        <input type="text" id="address" placeholder="Full address" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="zip">Zip Code</label>
+                        <input type="text" id="zip" placeholder="Zip Code" required>
+                    </div>
+                </fieldset>
+            </section>
+
+            <section>
+                <fieldset>
+                    <legend>Payment Details</legend>
+                    <label><input type="radio" name="payment" value="cc" checked> Credit Card</label>
+                    <label><input type="radio" name="payment" value="Paypal"> PayPal</label>
+                    <label><input type="radio" name="payment" value="cod"> Cash on Delivery</label>
+                    <label><input type="radio" name="payment" value="GCash"> GCash</label>
+                </fieldset>
+            </section>
+
+            <aside class="checkout-summary">
+                <h2>Summary</h2>
+                <p>Items subtotal: <b class="price"><span id="checkout-subtotal">0.00</span></b></p>
+                <p>Shipping: <b class="price"><span id="checkout-shipping">100.00</span></b></p>
+                <hr>
+                <p><strong>Total: <b class="price"><span id="checkout-total">0.00</span></b></strong></p>
+                <button type="submit">Place Order</button>
+            </aside>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

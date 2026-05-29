@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Product Catalog</h1>
+        <nav> 
+    <ul  class="order-list">
+      <li><a href="landing.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="account.html">Account</a></li>
+    </ul>
+  </nav>
+    </header>
+
+    <div class="container" style="display: flex;">
+        <aside>
+            <h2>Sort</h2>
+            <form>
+                <fieldset>
+                    <legend>Category</legend>
+                    <label><input type="checkbox" name="category" value="tech"> Electronics</label><br>
+                    <label><input type="checkbox" name="category" value="apparel"> Apparel</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Prices</legend>
+                    <label><input type="radio" name="price" value="under-50"> Under ₱500</label><br>
+                    <label><input type="radio" name="price" value="over-50"> ₱500 & Above</label>
+                </fieldset>
+            </form>
+        </aside>
+
+        <main>
+            <section class="product-grid">
+                <article class="product-card">
+                    <img src="headphones.png" alt="Premium Headphones">
+                    <h3>Premium Headphones</h3>
+                    <p class="price">199.00</p>
+                    <a href="detail.html">View Details</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="jacket.png" alt="Black Hoodie">
+                    <h3>Black Hoodie</h3>
+                    <p class="price">100.50</p>
+                    <a href="detail.html">View Details</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="baby-oil.png" alt="baby-oil">
+                    <h3>Baby Oil</h3>
+                    <p class="price">137.99</p>
+                    <a href="detail.html">View Details</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="basketball.png" alt="basketball">
+                    <h3>Basketball</h3>
+                    <p class="price">1,075.00</p>
+                    <a href="detail.html">View Details</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="dress.png" alt="dress">
+                    <h3>Dress</h3>
+                    <p class="price">240.00</p>
+                    <a href="detail.html">View Details</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="pot.png" alt="pot">
+                    <h3>Clay Pot</h3>
+                    <p class="price">300.50</p>
+                    <a href="detail.html">View Details</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="dumbell.png" alt="dumbell">
+                    <h3>Dumbell</h3>
+                    <p class="price">999.00</p>
+                    <a href="detail.html">View Details</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="watch.png" alt="watch">
+                    <h3>Watch</h3>
+                    <p class="price">589.00</p>
+                    <a href="detail.html">View Details</a>
+                </article>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

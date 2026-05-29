@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE SHOPPING CART</title>
+   <link href="style.css" rel="Stylesheet">
+</head>
+
+<body>
+  <main>
+
+  <header>
+   <h1>Shopping Cart</h1>
+   <nav> 
+    <ul  class="order-list">
+      <li><a href="landing.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="account.html">Account</a></li>
+    </ul>
+  </nav>
+  </header>
+
+    <ul class="cart-container" id="cart-list">   
+      <li>
+        <article class="cart-item">
+          <img src="headphones.png" alt="Headphones" class="img">
+          <h3>Premium Headphones</h3>
+          <p class="price">199.00</p>
+          <label><input type="number" min="1" value="1"></label>
+        </article> 
+      </li>
+
+      <li>
+        <article class="cart-item">
+          <img src="baby-oil.png" alt="baby-oil" class="img">
+          <h3>Johnson's Babyoil</h3>
+          <p class="price">70.99</p>
+          <label><input type="number" min="1" value="1"></label>
+        </article> 
+      </li>
+    </ul>
+
+    <div class="cart-summary">
+      <p>Subtotal: <strong class="price" id="cart-total">269.99</strong></p>
+    </div>
+    
+    <a href="checkout.html" class="btn-checkout">Proceed to Checkout</a>
+
+    <section class="empty-cart-message" style="display:none;">
+      <p>Your Cart is Currently Empty.</p>
+      <a href="products.html">Continue Shopping</a>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
